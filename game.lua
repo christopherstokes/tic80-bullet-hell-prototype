@@ -92,10 +92,10 @@ player = Entity(96, 96, 16, 16, {})
 player.animations.idle = Animation({1, 3}, 30, time)
 
 function player:update()
-	if btn(0) then self["y"]=self["y"]-1 end
-	if btn(1) then self["y"]=self["y"]+1 end
-	if btn(2) then self["x"]=self["x"]-1 end
-	if btn(3) then self["x"]=self["x"]+1 end
+	if btn(0) then self.y=self.y-1 end
+	if btn(1) then self.y=self.y+1 end
+	if btn(2) then self.x=self.x-1 end
+	if btn(3) then self.x=self.x+1 end
 end
 
 
